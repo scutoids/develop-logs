@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoinsOwO develop logs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>CoinsOwO develop logs</h1>
+        <p>Team Member: Cheung Ho Kit and Au Siu Hei</p>
+        <button id="toggleFormBtn" class="btn">Create New develop logs</button>
+      </div>
+    </header>
+    <main class="container">
+      <div id="formSection" class="hidden">
+        <form id="logForm">
+          <h2>Add New Development Progress</h2>
+          <input
+            type="text"
+            id="phase"
+            placeholder="Current Phase (e.g., Design Phase)"
+            required
+          />
+          <textarea id="focus" placeholder="Current Focus" required></textarea>
+          <textarea
+            id="completed"
+            placeholder="Completed Tasks (one per line)"
+          ></textarea>
+          <textarea
+            id="problems"
+            placeholder="Problems Faced & Solutions (one per line)"
+          ></textarea>
+          <textarea
+            id="goals"
+            placeholder="Next Goals (one per line)"
+          ></textarea>
+          <button type="submit" class="btn submit-btn">Publish Log</button>
+        </form>
+      </div>
+      <div id="logsContainer">
+        <!-- Logs will be dynamically loaded here -->
+      </div>
+    </main>
+    <!-- Firebase SDK (Modular) -->
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
